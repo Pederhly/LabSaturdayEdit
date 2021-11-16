@@ -1,0 +1,24 @@
+09:29 - Task 1: Prøvde x_gain = 0.1, y_gain = 1 --> For lav gain til å kunne få liftoff.
+09:30 - Task 1: Økte til x_gain = 2 og y_gain = -6 for å kunne fly nogenlunde.
+09:36 - Task 2: Alle enkoderne har riktig positiv retning. Offset på elevation er på 0.43 radianer.
+09:42 - Task 2: Skal finne Vs,0. La til et konstantledd på elevation = -3 for å få høyere oppløsning på joysticken slik at vi kan mer nøyaktig bestemme Vs,0.
+09:53 - Task 2: Vanskelig å bestemme når pitch ikke er låst, men kom frem til Vs,0 = 6 ga elevation lik 0. Fant ut at m_f > m_b Logfil: "Task 2 Vs0 log file"
+10:49 - Task 3: Poler på -1 og -1. Veldig treg respons og ustabil. Klarer å holde seg nogenlunde i luften, men mye oversving som gjør at den hele tiden roterer. Kpp =0.107. Kpd =0.2141. Logfil: "Data pol -1-1".
+11:47 - Task 3: Oppdaterte gain på x-joysticken til pi/4 for å begrense pitch til +-45 grader og y-gain til +-20 grader.
+11:52 - Task 3: TEST: Prøver med poler -4-4. Fungerer veldig bra, holder seg helt stabilt, men kjørte litt sidelengs.
+12:07 - Task 3: Legger til offset på elevation-målingen med 0.43 radianer. Starter fra bordet og flyr opp til den står horisontalt. Veldig bra
+12:10 - Task 3: Kjører en sprangrespons på pitch på 30 grader etter 15 sekunder i påfølgende tester.
+12:10 - Tasl 3: TEST: pol -4 -4. Begynner først med en fin sprangrespons med noe oversving, men faller av etterhvert og får et konstant avvik. Logg: "Data task 3, pol -4-4 step response"
+12:17 - Task 3: TEST: Pol 1 og 2, klarer ikke følge settpunkt i det hele tatt og velter med en gang. logg: "Data task 3, pol 12 step response"
+12:22 - Task 3: TEST: Pol -2 og -6. Var stabil, men noe tregere enn med poler på -4 og -4. Observerte også noe oversving, også falt verdien etterhvert, slik som ved -4 og -4. Logg: "Data task 3, pol -2-6 step response".
+12:29 - Task 3: TEST: Pol -12 og -12. Var stabil, men mye oversving og oscillasjoner. Reagerte mye raskere enn tidligere, men så også ut til å få et stasjonært avvik. Logg: "Data task 3, pol -12 -12 step response".
+12:35 - Task 3: TEST: pol -4 +-0.5i. Stabil, noe oversving, men lite oscillasjoner. Stasjonært avvik som før. Logg: "Data task 3, pol -4 +-0.5i step response".
+12:42 - Task 3: TEST: pol -4 +-i4. Stabil, mye oversving og noe oscillasjoner. Stasjonært avvik som før. Logg: "Data task 3, pol -4+-4i step response".
+12:49 - Task 3: TEST: pol -30 og -2. Prøver å få høyere Kd for å tillate Kp uten å få stort oversving. Ønsker dette for å fjerne stasjonært avvik. Resulterte i en veldig rask og presis sprangrespons, men fortsatt med et økende stasjonært avvik. Logg: "Data task 3, pol -30 -2 step response".
+13:13 - Task 3: TEST: pol 0 og -2. Prøver å få et marginalt stabilt system. Endte ustabilt og kuttet strøm etter kort tid. Logg: "Data task 3, pol 0 -2 step response".
+13:17 - Task 3: TEST: pol -60 og -3. Veldig rask sprangrespons, men noe oversving og litt oscillasjoner når den når referansen. Fortsatt et stasjonært avvik som synker og stabiliserer seg rundt 0.4. Logg: "Data task 3, pol -60 og -3 step response".
+
+
+
+ 
+
